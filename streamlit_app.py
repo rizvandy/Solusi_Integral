@@ -4,7 +4,7 @@ import sympy as sp
 st.set_page_config(page_title="Kalkulator Integral", layout="centered")
 
 st.title("🧮 Kalkulator Integral Numerik")
-st.subheader
+st.subheader("Metode Pias Titik Tengah")
 
 st.write("""
 Masukkan fungsi dan batas integral untuk menghitung
