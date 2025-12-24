@@ -12,6 +12,8 @@ data = {
 }
 df = pd.DataFrame(data)
 
+st.subheader("📋 Tabel Perhitungan")
+st.dataframe(df)
 
 # GRAFIK
 st.subheader("📈 Grafik Metode Pias Titik Tengah")
@@ -22,6 +24,7 @@ y_plot = f(x_plot)
 
 
 st.pyplot(fig)
+
 
 
 
