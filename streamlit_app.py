@@ -2,12 +2,13 @@ import streamlit as st
 import sympy as sp
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # TABEL
 data = {
     "i": range(1, n + 1),
     "Titik Tengah": titik_tengah,
-   
+    "f(Titik Tengah)": nilai_f
 }
 df = pd.DataFrame(data)
 
