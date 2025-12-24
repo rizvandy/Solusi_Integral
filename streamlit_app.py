@@ -1,5 +1,14 @@
 import streamlit as st
 import sympy as sp
+import numpy as np
+
+if st.button("Hitung Integral"):
+    x = sp.symbols('x')
+    
+
+    hasil_integral = h * sum(nilai_f)
+
+    st.success(f"Hasil aproksimasi integral = {hasil_integral}")
 
 st.set_page_config(page_title="Kalkulator Integral", layout="centered")
 
