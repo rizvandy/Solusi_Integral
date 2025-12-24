@@ -1,15 +1,19 @@
 import streamlit as st
 import sympy as sp
 import numpy as np
+
 if st.button("Hitung Integral"):
     x = sp.symbols('x')
     fungsi = sp.sympify(fungsi_input)
     f = sp.lambdify(x, fungsi, "numpy")
 
+    h = (b - a) / n
+    titik_tengah = [a + (i + 0.5) * h for i in range(n)]
+    nilai_f = [f(xi) for xi in titik_tengah]
+
     hasil_integral = h * sum(nilai_f)
 
     st.success(f"Hasil aproksimasi integral = {hasil_integral}")
-
 
 st.set_page_config(page_title="Kalkulator Integral", layout="centered")
 
