@@ -24,9 +24,12 @@ y_plot = f(x_plot)
 fig, ax = plt.subplots()
 ax.plot(x_plot, y_plot, label="f(x)")
 ax.bar(titik_tengah, nilai_f, width=h, alpha=0.3, edgecolor='black')
-
+ax.legend()
+ax.set_xlabel("x")
+ax.set_ylabel("f(x)")
 
 st.pyplot(fig)
+
 
 if st.button("Hitung Integral"):
     x = sp.symbols('x')
