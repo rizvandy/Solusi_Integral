@@ -13,7 +13,6 @@ data = {
 df = pd.DataFrame(data)
 
 
-
 # GRAFIK
 st.subheader("📈 Grafik Metode Pias Titik Tengah")
 
@@ -21,7 +20,9 @@ x_plot = np.linspace(a, b, 400)
 y_plot = f(x_plot)
 
 
+
 st.pyplot(fig)
+
 
 
 if st.button("Hitung Integral"):
